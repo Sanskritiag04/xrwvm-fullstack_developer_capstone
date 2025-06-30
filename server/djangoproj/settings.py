@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# noqa: E501
 SECRET_KEY = 'django-insecure-ccow$tz_=9%dxu4(0%^(z%nx32#s@(zt9$ih@)5l54yny)wm-0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -29,9 +30,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
+    # noqa: E501
     'https://iti040505-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
 ]
 CSRF_TRUSTED_ORIGINS = [
+    # noqa: E501
     'https://iti040505-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
 ]
 REST_FRAMEWORK = {
@@ -96,15 +99,19 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
+    # noqa: E501
       'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
+        # noqa: E501
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
+        # noqa: E501
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
+        # noqa: E501
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
