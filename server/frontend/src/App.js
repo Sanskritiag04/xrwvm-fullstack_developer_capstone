@@ -1,4 +1,3 @@
-/*jshint esversion: 8 */
 import LoginPanel from "./components/Login/Login"
 import { Routes, Route } from "react-router-dom";
 import RegisterContainer from "./components/Register/Register"
